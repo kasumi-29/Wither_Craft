@@ -1,0 +1,4 @@
+name: Wither_Craft
+version: ${project.version}
+main: kun.minecraft_plugin.wither_craft.Wither_Craft
+api-version: 1.16
