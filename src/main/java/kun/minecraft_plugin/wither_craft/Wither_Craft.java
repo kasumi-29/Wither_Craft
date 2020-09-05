@@ -34,7 +34,7 @@ public final class Wither_Craft extends JavaPlugin {
 
     public void check(int v,boolean c, Location l){
         if((!chain)&&c){return;}
-        if(v==level){
+        if(v<=level){
             if(r.nextDouble()<par){
                 Wither w=(Wither)Objects.requireNonNull(l.getWorld()).spawnEntity(l, EntityType.WITHER);
                 Objects.requireNonNull(w.getBossBar()).removeAll();
