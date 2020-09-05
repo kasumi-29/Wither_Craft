@@ -47,16 +47,15 @@ public final class Wither_Craft extends JavaPlugin {
     private class get_event implements Listener {
         @EventHandler
         public void MobSpawn(EntitySpawnEvent event) {
-            int out=-1;
+            if(event.getEntityType().equals(EntityType.WITHER_SKULL)){return;}
+            int out=2;
             Entity e=event.getEntity();
             if (e instanceof Monster) {
                 out=0;
             }else if(e instanceof Mob){
                 out=1;
-            }else{
-                out=2;
             }
-            check(out,event.getEntityType()==EntityType.WITHER,event.getLocation());
+            check(out,event.getEntityType().equals(EntityType.WITHER),event.getLocation());
         }
     }
 }
