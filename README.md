@@ -138,7 +138,7 @@ config.yml には次の3つの項目が記載されています。
  Vindicator
  WanderingTrader
  Witch
- Wither
+ Wither (chainがTRUEのときのみ)
  WitherSkeleton
  Wolf
  Zoglin
