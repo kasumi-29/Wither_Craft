@@ -2,3 +2,5 @@ name: Wither_Craft
 version: ${project.version}
 main: kun.minecraft_plugin.wither_craft.Wither_Craft
 api-version: 1.16
+description: "一定確率でウィザーが召喚されるプラグインです。"
+author: "kasumi-29 (kasumigaura)"
