@@ -33,7 +33,7 @@ public final class Wither_Craft extends JavaPlugin {
         if(v<=level){
             if(r.nextDouble()<par){
                 Wither w=(Wither)Objects.requireNonNull(l.getWorld()).spawnEntity(l, EntityType.WITHER);
-                Objects.requireNonNull(w.getBossBar()).removeAll();
+                Objects.requireNonNull(w.getBossBar()).setVisible(false);
                 getLogger().info("WITHERが召喚されました。場所："+l.getX()+","+l.getY()+","+l.getZ());
             }
         }
