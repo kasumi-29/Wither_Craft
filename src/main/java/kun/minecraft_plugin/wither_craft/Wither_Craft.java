@@ -4,12 +4,9 @@ import org.bukkit.Location;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.CreatureSpawnEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Objects;
 import java.util.Random;
 
@@ -22,8 +19,7 @@ public final class Wither_Craft extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        par=getConfig().getDouble("probability");
-        par=new BigDecimal(par).setScale(3, RoundingMode.DOWN).doubleValue()/100;
+        par=getConfig().getDouble("probability")/100;
         level=getConfig().getInt("EntityThreshold");
         chain=getConfig().getBoolean("chain");
 

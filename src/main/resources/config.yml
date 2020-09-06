@@ -1,8 +1,8 @@
 # probability is between 0 and 100.
 probability: 1
 
-# EntityThreshold is 0 or 1 or 2 or 3
+# EntityThreshold is 0 or 1 or 2 (or -1)
 EntityThreshold: 0
 
 #chain is TRUE or FALSE
-chain: FALSE
+chain: TRUE
